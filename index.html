@@ -1,4 +1,108 @@
-<script type="module">
-import { OR_KERNEL } from "./OR_KERNEL.js";
-const OR = OR_KERNEL("index");
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>SCAN‑HUB BIOS</title>
+<style>
+    body {
+        margin:0;
+        background:#000;
+        color:#0f0;
+        font-family:Consolas, monospace;
+        overflow:hidden;
+    }
+
+    #boot {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        text-align:center;
+        font-size:22px;
+        opacity:0;
+        animation:fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+        to { opacity:1; }
+    }
+
+    #axis {
+        margin-top:20px;
+        font-size:18px;
+        opacity:0;
+        animation:axisAnim 4s forwards;
+        animation-delay:2s;
+    }
+
+    @keyframes axisAnim {
+        to { opacity:1; }
+    }
+
+    #startbtn {
+        margin-top:40px;
+        padding:12px 30px;
+        font-size:20px;
+        background:#0f0;
+        color:#000;
+        border:none;
+        cursor:pointer;
+        opacity:0;
+        animation:btnAnim 3s forwards;
+        animation-delay:4s;
+    }
+
+    @keyframes btnAnim {
+        to { opacity:1; }
+    }
+
+    #main {
+        display:none;
+        padding:20px;
+        font-size:18px;
+    }
+
+    .scanbox {
+        border:1px solid #0f0;
+        padding:10px;
+        margin:10px 0;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="boot">
+    SCAN‑HUB BIOS<br>
+    <small>Unified Scan Law v1.0</small>
+
+    <div id="axis">
+        Φ → φ → φ² → φ∞<br>
+        <small>Startsequenz geladen</small>
+    </div>
+
+    <button id="startbtn" onclick="startHub()">START</button>
+</div>
+
+<div id="main">
+    <h2>SCAN‑HUB – 7 Funktionen</h2>
+
+    <div class="scanbox">DOM‑Scan</div>
+    <div class="scanbox">Argument‑Scan</div>
+    <div class="scanbox">Positions‑Scan</div>
+    <div class="scanbox">UI‑Analyse</div>
+    <div class="scanbox">Fehler‑Scan</div>
+    <div class="scanbox">Performance‑Scan</div>
+    <div class="scanbox">SEO‑Scan</div>
+    <div class="scanbox">Dokument‑Scan</div>
+</div>
+
+<script>
+function startHub(){
+    document.getElementById("boot").style.display = "none";
+    document.getElementById("main").style.display = "block";
+}
 </script>
+
+</body>
+</html>
