@@ -2,107 +2,104 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>SCAN‑HUB BIOS</title>
+<title>OR(BIT)(ORBIT)SYS – index</title>
+
+<!-- System-Signatur -->
+<meta name="signature" content="IKI1UC-ORBIT-SYS-INDEX">
+
+<!-- RESPO-ID -->
+<meta name="respo-id" content="20000-ORBIT-SYS">
+
+<!-- OR-Kernel -->
+<script type="module">
+import { OR_INJECT } from "./OR_INJECT.js";
+OR_INJECT("ORBIT-SYS-INDEX");
+</script>
+
 <style>
-    body {
-        margin:0;
-        background:#000;
-        color:#0f0;
-        font-family:Consolas, monospace;
-        overflow:hidden;
-    }
-
-    #boot {
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform:translate(-50%, -50%);
-        text-align:center;
-        font-size:22px;
-        opacity:0;
-        animation:fadeIn 2s forwards;
-    }
-
-    @keyframes fadeIn {
-        to { opacity:1; }
-    }
-
-    #axis {
-        margin-top:20px;
-        font-size:18px;
-        opacity:0;
-        animation:axisAnim 4s forwards;
-        animation-delay:2s;
-    }
-
-    @keyframes axisAnim {
-        to { opacity:1; }
-    }
-
-    #startbtn {
-        margin-top:40px;
-        padding:12px 30px;
-        font-size:20px;
-        background:#0f0;
-        color:#000;
-        border:none;
-        cursor:pointer;
-        opacity:0;
-        animation:btnAnim 3s forwards;
-        animation-delay:4s;
-    }
-
-    @keyframes btnAnim {
-        to { opacity:1; }
-    }
-
-    #main {
-        display:none;
-        padding:20px;
-        font-size:18px;
-    }
-
-    .scanbox {
-        border:1px solid #0f0;
-        padding:10px;
-        margin:10px 0;
-    }
+body {
+    background:#000;
+    color:#0f0;
+    font-family:Consolas, monospace;
+    padding:20px;
+}
+h1, h2 { color:#6cf; }
+pre {
+    background:#111;
+    border:1px solid #333;
+    padding:12px;
+    margin-bottom:25px;
+}
+a {
+    color:#6cf;
+    display:block;
+    margin:8px 0;
+}
+hr {
+    border:1px solid #333;
+    margin:25px 0;
+}
 </style>
 </head>
 
 <body>
 
-<div id="boot">
-    SCAN‑HUB BIOS<br>
-    <small>Unified Scan Law v1.0</small>
+<h1>OR(BIT)(ORBIT)SYS – index</h1>
+<p>System‑Index für das Orbit‑Bit‑System (iki1uc RAW 213)</p>
 
-    <div id="axis">
-        Φ → φ → φ² → φ∞<br>
-        <small>Startsequenz geladen</small>
-    </div>
+<hr>
 
-    <button id="startbtn" onclick="startHub()">START</button>
-</div>
+<h2>System‑Daten</h2>
+<pre>
+CORE = iki1uc
+VERSION = RAW 213
+DIMENSIONEN = 3D / 4D / 6D / 12D / 48D
+STATUS = Online
 
-<div id="main">
-    <h2>SCAN‑HUB – 7 Funktionen</h2>
+SIGNATUR = IKI1UC-ORBIT-SYS-INDEX
+RESPO-ID = 20000-ORBIT-SYS
+</pre>
 
-    <div class="scanbox">DOM‑Scan</div>
-    <div class="scanbox">Argument‑Scan</div>
-    <div class="scanbox">Positions‑Scan</div>
-    <div class="scanbox">UI‑Analyse</div>
-    <div class="scanbox">Fehler‑Scan</div>
-    <div class="scanbox">Performance‑Scan</div>
-    <div class="scanbox">SEO‑Scan</div>
-    <div class="scanbox">Dokument‑Scan</div>
-</div>
+<hr>
 
-<script>
-function startHub(){
-    document.getElementById("boot").style.display = "none";
-    document.getElementById("main").style.display = "block";
-}
-</script>
+<h2>OR(BIT)SYS‑Module</h2>
+<a href="./toolomat_dom.html">DOM‑Modul</a>
+<a href="./toolomat_flaeche_48.html">48‑Flächen‑Modul</a>
+<a href="./toolomat_output.html">Output‑Modul</a>
+<a href="./toolomat_scripts.html">Scripts‑Modul</a>
+<a href="./toolomat_ui.html">UI‑Modul</a>
+<a href="./GEOMETRIA.js">GEOMETRIA – Achsen</a>
+<a href="./ORBIT.js">ORBIT – Orbit‑Achsen</a>
+<a href="./ARBIT.js">ARBIT – Stabilität</a>
+<a href="./RESPO_INTEGRATION.js">RESPO – Wahrheit</a>
+
+<hr>
+
+<h2>RAW‑Konstrukte (iki1uc 213)</h2>
+<pre>
+3D  = Φ, φ, φ∞
+4D  = 3D + Zeit
+6D  = 4D + Orbit + Zustand
+12D = 6D + BORG + Raster + Rotation
+48D = 12D + vollständige 3×N‑Raster
+</pre>
+
+<hr>
+
+<h2>Orbit‑Visual</h2>
+<a href="./toolomat_flaeche_48.html">48D‑Cube‑Orbit</a>
+
+<hr>
+
+<h2>Hinweis</h2>
+<pre>
+Dieses System ist der zentrale Index für OR(BIT)(ORBIT)SYS.
+Alle Mechanismen werden über OR_INJECT + OR_KERNEL geladen.
+Alle Achsen werden über GEOMETRIA validiert.
+Alle Orbit‑Daten werden über ORBIT.js erzeugt.
+Alle LAGE‑Daten werden über LAGE.js erzeugt.
+Alle RAW‑Konstrukte stammen aus iki1uc RAW 213.
+</pre>
 
 </body>
 </html>
