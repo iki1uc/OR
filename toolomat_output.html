@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<title>TOOLOMAT OUTPUT</title>
-
-<style>
-body{background:#000;color:#0f0;font-family:monospace;padding:20px;}
-pre{background:#111;padding:20px;border:1px solid #333;}
-</style>
-</head>
-
-<body>
-
-<h1>TOOLOMAT OUTPUT</h1>
-
-<pre id="out">Bereit...</pre>
-
-<script src="../GEOMETRIA.js"></script>
-<script src="toolomat_scripts.js"></script>
-
-</body>
-</html>
+<script type="module">
+import { OR_INJECT } from "./OR_INJECT.js";
+OR_INJECT("toolomat_output");
+</script>
