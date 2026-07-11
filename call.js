@@ -1,3 +1,2 @@
-// call.js ist LEER
-// Du hast keinen Code gepostet.
-// Wenn du willst, kann ich dir eine Basis-Version bauen.
+import { OR_INJECT } from "./OR_INJECT.js";
+OR_INJECT("call");
