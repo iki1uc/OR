@@ -1,3 +1,2 @@
-import { OR_KERNEL } from "./OR_KERNEL.js";
-const OR = OR_KERNEL("GEOMETRIA");
-console.log("OR:", OR);
+import { OR_INJECT } from "./OR_INJECT.js";
+OR_INJECT("GEOMETRIA");
